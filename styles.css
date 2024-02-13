@@ -17,8 +17,58 @@
     --green: #11383B;
 }
 
-/* Set default container for all elements */
+/* Set default container for max-width on all elements */
 .container {
     max-width: 90%;
     margin: 0 auto;
 }
+
+/* Default button styling */
+.btn {
+    padding: 0.5rem 1rem;
+    cursor: url(icons/cursor.png) 1 1, auto;
+    border-radius: 1.5rem;
+    border: 2px solid black;
+    font-size: 1.25rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    z-index: -2;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #FC7F3C;
+    /* Darkened color #0cf */
+    transition: all .5s;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover:before {
+    width: 100%;
+}   
+
