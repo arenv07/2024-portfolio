@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 /* Default styling */
 * {
@@ -6,4 +7,12 @@
     max-width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+/* Variables */
+:root {
+    --orange: #FC7F3C;
+    --black: #161D23;
+    --red: #ED2B20;
+    --green: #11383B;
 }
